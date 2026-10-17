@@ -295,4 +295,36 @@ Changing these parameters can affect the reconstruction detail, animation durati
 
 ## 🔮 Future Possibilities
 
-This project could be
+This project could be extended with:
+
+* 🎛️ Interactive controls for epicycle count and animation speed.
+* ⏯️ Playback controls for pausing and restarting.
+* 🗺️ Support for other state and country boundaries.
+* ✏️ Custom-shape uploads for Fourier reconstruction.
+* 🔍 Side-by-side comparison of the original and reconstructed shapes.
+* 📈 Visualization of individual Fourier components.
+
+These are potential improvements, not features currently guaranteed by the application.
+
+---
+
+## 👨‍💻 About the Developer
+
+<div align="center">
+
+### Aditya Borgaonkar
+
+Computer Science Engineering — Artificial Intelligence & Analytics
+MIT ADT University, Pune
+
+<a href="https://github.com/aditya280505">
+  <img src="https://img.shields.io/badge/Explore_My_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore GitHub">
+</a>
+
+<br><br>
+
+**[🌀 Try the Live Project](https://maharashtra-fourier-epicycles.streamlit.app/)**
+
+*Turning mathematical concepts into visual experiences.*
+
+</div>
