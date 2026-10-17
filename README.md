@@ -219,10 +219,3 @@ Exploring the intersection of mathematics, programming and creative visualizatio
 
 ---
 
-<div align="center">
-
-**⭐ If you find this project interesting, consider giving it a star!**
-
-*Built with Python, mathematics and curiosity.*
-
-</div>
