@@ -1,70 +1,130 @@
-# 🌀 Maharashtra Fourier Epicycles
+<div align="center">
 
-### Bringing Maharashtra's Map to Life with Fourier Mathematics
+# 🌀 MAHARASHTRA
 
-A Python visualization project that reconstructs the geographical outline of Maharashtra, India, using Fourier transforms and rotating circles called **epicycles**.
+# FOURIER EPICYCLES
 
-<p align="center">
-  <a href="https://maharashtra-fourier-epicycles.streamlit.app/">
-    <img src="https://img.shields.io/badge/🚀_LAUNCH_LIVE_DEMO-Visit_App-FF4B4B?style=for-the-badge" alt="Launch Live Demo">
-  </a>
-  &nbsp;
-  <a href="https://github.com/aditya280505/maharashtra-fourier-epicycles">
-    <img src="https://img.shields.io/badge/GitHub-View_Source_Code-181717?style=for-the-badge&logo=github" alt="View Source Code">
-  </a>
-</p>
+### Turning Geography into Mathematics.
 
----
+**What if rotating circles could draw an entire state?**
 
-## 🌐 Try It Yourself
+A mathematical visualization of Maharashtra's geographical outline using Fourier transforms, complex numbers, and rotating epicycles.
 
-### [🚀 Open the Live Application](https://maharashtra-fourier-epicycles.streamlit.app/)
+<br>
 
-Experience how rotating circles combine to trace the outline of Maharashtra.
+<a href="https://maharashtra-fourier-epicycles.streamlit.app/">
+  <img src="https://img.shields.io/badge/▶%20EXPLORE%20LIVE%20DEMO-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Explore Live Demo">
+</a>
 
-**How to explore:**
+<a href="#-how-it-works">
+  <img src="https://img.shields.io/badge/UNDERSTAND%20THE%20MATH-20232A?style=for-the-badge" alt="Understand the Math">
+</a>
 
-1. Open the live application using the button above.
-2. Press play on the animation.
-3. Watch the epicycles trace the geographical boundary.
-4. Explore the source code to understand how the visualization works.
+<br><br>
 
-> **Note:** The live application displays a pre-generated MP4 animation. The Fourier calculations and animation generation are performed by the Python script.
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square" alt="Matplotlib">
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
+
+</div>
 
 ---
 
-## 📌 About the Project
+## ✨ Experience the Project
 
-Can a complex geographical shape be reconstructed using nothing but rotating circles?
+<div align="center">
 
-This project demonstrates the mathematical idea behind that question.
+### 🗺️ One State. Many Circles. One Continuous Path.
 
-The geographical boundary of Maharashtra is represented as a sequence of points. A Discrete Fourier Transform converts these points into frequency components, which are then visualized as rotating vectors.
+**[🚀 OPEN THE LIVE ANIMATION](https://maharashtra-fourier-epicycles.streamlit.app/)**
 
-Each vector contributes to the overall motion. When connected end-to-end, the vectors form epicycles whose final endpoint traces an approximation of the original boundary.
+Watch the epicycles rotate and trace the outline of Maharashtra.
 
-The project combines mathematics, geospatial data processing, Python programming, and scientific visualization in one animation.
+</div>
 
-### ✨ Key Features
-
-* 🗺️ Geographical boundary visualization of Maharashtra, India.
-* 🌀 Fourier-based reconstruction using rotating epicycles.
-* 📐 Discrete Fourier Transform calculations.
-* 🎬 MP4 animation generation.
-* 🌐 Browser-based video playback using Streamlit.
-* 🐍 Scientific computing and visualization with Python.
+> 💡 **Quick tip:** Open the live demo first to experience the animation. Then explore the sections below to understand the mathematics behind it.
 
 ---
 
-## 🧠 How Does It Work?
+## 🧭 Explore
 
-### 1. Obtain the Boundary
+| Discover                                    | What you'll learn                                 |
+| :------------------------------------------ | :------------------------------------------------ |
+| [🎯 The Idea](#-the-idea)                   | What the project does and why it is interesting   |
+| [⚙️ How It Works](#-how-it-works)           | From geographical coordinates to rotating circles |
+| [🧮 The Mathematics](#-the-mathematics)     | Fourier transforms and complex numbers            |
+| [🛠️ Technology](#️-technology-stack)       | Tools and libraries used                          |
+| [💻 Run Locally](#-run-it-on-your-computer) | Set up the project on your machine                |
+| [🔮 What's Next](#-future-possibilities)    | Ideas for making it even better                   |
 
-The project uses geographical boundary data stored in GeoJSON format.
+---
 
-### 2. Extract Coordinates
+## 🎯 The Idea
 
-The boundary is converted into a sequence of two-dimensional points represented as complex numbers:
+A geographical boundary may look complicated, but it can be represented as a combination of simpler mathematical components.
+
+This project takes the outline of Maharashtra and uses the **Discrete Fourier Transform (DFT)** to represent its sampled boundary coordinates as rotating vectors.
+
+When those vectors rotate together, their combined endpoint traces an approximation of the original shape.
+
+**The result:** a mathematical animation that connects geography, signal processing, and computer visualization.
+
+### Why is this interesting?
+
+* **Mathematics becomes visual:** Fourier coefficients become rotating circles.
+* **Complex shapes become understandable:** A boundary is reconstructed from simpler components.
+* **Data becomes an animation:** Geographical coordinates are transformed into a visual experience.
+
+---
+
+## ⚙️ How It Works
+
+<div align="center">
+
+**STEP 01 — GEOGRAPHICAL DATA**
+
+🗺️ Maharashtra boundary in GeoJSON
+
+⬇️
+
+**STEP 02 — COORDINATE PROCESSING**
+
+📍 Extract and prepare boundary points
+
+⬇️
+
+**STEP 03 — FOURIER TRANSFORM**
+
+🧮 Calculate frequency components
+
+⬇️
+
+**STEP 04 — EPICYCLE CONSTRUCTION**
+
+🌀 Combine rotating vectors
+
+⬇️
+
+**STEP 05 — ANIMATION**
+
+🎬 Trace the reconstructed boundary
+
+⬇️
+
+**FINAL RESULT**
+
+✨ A Fourier-based visualization of Maharashtra
+
+</div>
+
+### 1. Get the Boundary
+
+The project uses geographical coordinates stored in GeoJSON format.
+
+### 2. Represent the Coordinates
+
+The sampled two-dimensional points are represented using complex numbers:
 
 $$
 z_n = x_n + iy_n
@@ -72,100 +132,102 @@ $$
 
 Here, \(x_n\) and \(y_n\) represent the two coordinate components.
 
-### 3. Apply the Fourier Transform
+### 3. Calculate Fourier Coefficients
 
-The Discrete Fourier Transform converts the sampled coordinates into frequency components:
+The Discrete Fourier Transform converts the sequence of points into frequency components:
 
 $$
 X_k = \sum_{n=0}^{N-1} z_n e^{-i2\pi kn/N}
 $$
 
-These coefficients contain the information needed to reconstruct the sampled shape.
+These coefficients encode the information used to reconstruct the sampled path.
 
-### 4. Build the Epicycles
+### 4. Build Rotating Epicycles
 
 Each selected Fourier coefficient defines a rotating vector.
 
-* **Magnitude:** Determines the vector's length.
-* **Frequency:** Determines its rotation rate and direction.
-* **Phase:** Determines its initial angular position.
+* **Magnitude** determines its length.
+* **Frequency** determines its rotation rate and direction.
+* **Phase** determines its initial angular position.
 
-Connecting these rotating vectors creates the epicycle chain.
+### 5. Draw the Shape
 
-### 5. Trace the Shape
+The vectors rotate together, and the endpoint of the final vector traces the reconstructed boundary.
 
-As the vectors rotate, the endpoint of the final vector traces the reconstructed boundary.
+The quality of the reconstruction depends on the selected Fourier components and the coordinate sampling.
 
-The selected Fourier components determine how closely the reconstructed path resembles the original shape.
+---
 
-### 6. Generate the Animation
+## 🧮 The Mathematics Behind the Magic
 
-Python and Matplotlib render the motion and export it as an MP4 video. Streamlit then displays the generated video in the web application.
+The central idea is that a sampled periodic path can be represented through a collection of complex Fourier components.
+
+Each component contributes a rotating vector:
+
+$$
+z(t) = \sum_{k=0}^{N-1} X_k e^{i2\pi kt/N}
+$$
+
+The implementation may reorder or normalize Fourier coefficients for its particular animation. The expression above illustrates the underlying reconstruction principle.
+
+Think of it this way:
+
+* One rotating vector creates a simple circular motion.
+* Several rotating vectors combine into a more complex path.
+* A carefully selected collection of components can approximate the original boundary.
+
+**That's the core idea behind Fourier epicycles.**
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Technology   | Purpose                                      |
-| ------------ | -------------------------------------------- |
-| Python       | Core programming language                    |
-| NumPy        | Numerical calculations and Fourier transform |
-| Matplotlib   | Visualization and animation                  |
-| Shapely      | Geometrical processing                       |
-| GeoJSON      | Geographical boundary data                   |
-| FFmpeg       | MP4 video encoding                           |
-| Streamlit    | Web application                              |
-| Git & GitHub | Version control and source code hosting      |
+| Technology      | Role in the Project                           |
+| :-------------- | :-------------------------------------------- |
+| 🐍 Python       | Main programming language                     |
+| 🔢 NumPy        | Fourier calculations and numerical operations |
+| 📊 Matplotlib   | Drawing and rendering the animation           |
+| 📐 Shapely      | Geometrical processing of boundary data       |
+| 🗺️ GeoJSON     | Geographical boundary representation          |
+| 🎬 FFmpeg       | MP4 video encoding                            |
+| 🌐 Streamlit    | Live web application                          |
+| 🔗 Git & GitHub | Source control and repository hosting         |
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 maharashtra-fourier-epicycles/
 │
-├── app.py
-├── maharashtra_fourier.py
-├── maharashtra.geojson
-├── maharashtra_fourier.mp4
-├── download_map.py
-├── requirements.txt
-└── README.md
+├── app.py                    # Web application
+├── maharashtra_fourier.py    # Fourier and animation logic
+├── maharashtra.geojson       # Maharashtra boundary data
+├── maharashtra_fourier.mp4   # Generated animation
+├── download_map.py           # Boundary download script
+├── requirements.txt          # App dependencies
+└── README.md                 # Project documentation
 ```
-
-| File                      | Description                                               |
-| ------------------------- | --------------------------------------------------------- |
-| `app.py`                  | Streamlit application that displays the animation         |
-| `maharashtra_fourier.py`  | Fourier calculations, epicycles, and animation generation |
-| `maharashtra.geojson`     | Geographical boundary data                                |
-| `maharashtra_fourier.mp4` | Generated animation                                       |
-| `download_map.py`         | Script for downloading boundary data                      |
-| `requirements.txt`        | Python dependencies for deployment                        |
-| `README.md`               | Project documentation                                     |
 
 ---
 
-## ⚙️ Run the Project Locally
+## 💻 Run It on Your Computer
 
-### Prerequisites
+Want to explore the code locally? Follow these steps.
 
-* Python 3
-* Git
-* FFmpeg, if regenerating the animation
-
-### Step 1 — Clone the Repository
+### ① Clone the repository
 
 ```bash
 git clone https://github.com/aditya280505/maharashtra-fourier-epicycles.git
 ```
 
-### Step 2 — Enter the Project Directory
+### ② Open the project directory
 
 ```bash
 cd maharashtra-fourier-epicycles
 ```
 
-### Step 3 — Create a Virtual Environment
+### ③ Create a virtual environment
 
 ```bash
 python -m venv venv
@@ -177,123 +239,60 @@ Activate it on Windows:
 .\venv\Scripts\Activate.ps1
 ```
 
-### Step 4 — Install Dependencies
+### ④ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-For local animation generation, install the additional scientific libraries if they are not already included:
+For local animation generation, install the scientific libraries if they are not already installed:
 
 ```bash
 pip install numpy matplotlib shapely
 ```
 
-FFmpeg must also be installed and configured for Matplotlib video export.
+FFmpeg is also required for MP4 generation and must be configured for Matplotlib.
 
-### Step 5 — Launch the Web Application
+### ⑤ Launch the application
 
 ```bash
 streamlit run app.py
 ```
 
-Open the local address shown in your terminal, usually:
+Open the local address displayed in your terminal, usually:
 
 **http://localhost:8501**
 
-Make sure `maharashtra_fourier.mp4` exists in the expected project directory.
+The generated video `maharashtra_fourier.mp4` must be available at the path expected by the application.
 
----
+### 🎬 Generate the animation again
 
-## 🎬 Regenerate the Animation
-
-To generate the animation again, run:
+To regenerate the video, run:
 
 ```bash
 python maharashtra_fourier.py
 ```
 
-The script processes the boundary coordinates, calculates Fourier components, renders the epicycle animation, and exports the MP4 video.
-
-### Animation Parameters
-
-The following settings can be adjusted in the Python script:
-
-| Parameter      | Purpose                                     |
-| -------------- | ------------------------------------------- |
-| `NUM_CIRCLES`  | Number of Fourier components used           |
-| `FRAMES`       | Total number of animation frames            |
-| `FPS`          | Frames rendered per second                  |
-| `EXPORT_MP4`   | Controls video export                       |
-| `SHOW_CIRCLES` | Controls the visibility of epicycle circles |
-
-The visual result depends on the selected Fourier components, coordinate sampling, and animation settings.
+The script processes the boundary coordinates, calculates Fourier components, renders the animation, and exports the MP4 file.
 
 ---
 
-## 📦 Deployment Dependencies
+## 🔧 Animation Controls in the Code
 
-The deployed application only needs Streamlit when it plays the existing MP4 file.
+The Python script includes parameters that can be adjusted to experiment with the visualization.
 
-Example `requirements.txt`:
+| Parameter      | What it changes                      |
+| :------------- | :----------------------------------- |
+| `NUM_CIRCLES`  | Number of Fourier components used    |
+| `FRAMES`       | Number of animation frames           |
+| `FPS`          | Video frame rate                     |
+| `EXPORT_MP4`   | Whether to export an MP4             |
+| `SHOW_CIRCLES` | Whether to show the epicycle circles |
 
-```text
-streamlit
-```
-
-For regenerating the animation locally, NumPy, Matplotlib, Shapely, and a working FFmpeg installation are also required.
-
----
-
-## 🌍 Geographical Data Source
-
-The project uses Maharashtra boundary data from DataMeet.
-
-**[View Maharashtra GeoJSON Data](https://raw.githubusercontent.com/datameet/maps/master/States/Maharashtra.geojson)**
-
-The GeoJSON coordinates serve as the input for the boundary-processing and Fourier reconstruction steps.
+Changing these parameters can affect the reconstruction detail, animation duration, and rendering time.
 
 ---
 
-## 📚 Concepts Demonstrated
+## 🔮 Future Possibilities
 
-* Discrete Fourier Transform
-* Fourier Series and frequency components
-* Complex numbers and rotating vectors
-* Epicycles and shape reconstruction
-* Geospatial data processing
-* Scientific visualization
-* Python animation and MP4 rendering
-* Streamlit application deployment
-
----
-
-## 🔮 Future Enhancements
-
-Potential improvements include:
-
-* Interactive control over the number of epicycles.
-* Adjustable animation speed.
-* Step-by-step visualization of Fourier components.
-* Support for additional geographical boundaries.
-* Custom shape uploads.
-* Comparison between the original and reconstructed boundaries.
-* Interactive playback controls.
-
----
-
-## 👨‍💻 Author
-
-**Aditya Borgaonkar**
-
-Computer Science Engineering — Artificial Intelligence & Analytics
-MIT ADT University, Pune
-
-<p align="center">
-  <a href="https://github.com/aditya280505">
-    <img src="https://img.shields.io/badge/GitHub-aditya280505-181717?style=for-the-badge&logo=github" alt="Aditya Borgaonkar on GitHub">
-  </a>
-  <a href="https://maharashtra-fourier-epicycles.streamlit.app/">
-    <img src="https://img.shields.io/badge/Live_Demo-Open_Application-FF4B4B?style=for-the-badge" alt="Open Live Application">
-  </a>
-</p>
+This project could be
